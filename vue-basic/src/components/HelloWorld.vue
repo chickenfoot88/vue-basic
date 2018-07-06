@@ -1,5 +1,6 @@
 <template>
   <div class="hello">
+    <Question></Question>
     <h1>{{ msg }}</h1>
     <p>
       For guide and recipes on how to configure / customize this project,<br>
@@ -30,10 +31,15 @@
 </template>
 
 <script>
+import Question from './question.vue';
+
 export default {
   name: 'HelloWorld',
   props: {
     msg: String
+  },
+  components: {
+    Question
   }
 }
 </script>
